@@ -1,15 +1,16 @@
 default: &default
-adapter: postgresql
-encoding: unicode
-pool: 5
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
 development:
-«: *default
-database: valhalla_development
+  <<: *default
+  database: valhalla_development
 
 production:
-«: *default
-database: valhalla_production
+  <<: *default
+  database: valhalla_production
 
 test:
-«: *default
-database: valhalla_test
+  <<: *default
+  database: valhalla_test
